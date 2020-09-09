@@ -1,0 +1,12 @@
+.inline{
+    display: inline;
+}
+.bold{
+    font-weight: bold;
+}
+.prodImage{
+    max-height: 500px;
+}
+.hide{
+    display: none;
+}
