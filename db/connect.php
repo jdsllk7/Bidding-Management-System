@@ -40,9 +40,10 @@ $sql = "CREATE TABLE IF NOT EXISTS product (
 	pImage VARCHAR(255),
 	pQuantity VARCHAR(255),
 	pInitialCost VARCHAR(255),
-	bCountDown TIMESTAMP
+	bCountDown TIMESTAMP,
+	Category VARCHAR(255)
 	)";
-// $sql = "DROP TABLE IF EXISTS product";
+//$sql = "DROP TABLE IF EXISTS product";
 mysqli_query($conn, $sql);
 
 

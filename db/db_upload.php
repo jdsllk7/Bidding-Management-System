@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $pQuantity = $_POST["pQuantity"];
       $pInitialCost = $_POST["pInitialCost"];
       $duration = $_POST["duration"];
+      $ProductCategory = $_POST["ProductCategory"];
 
       $timestamp = date("Y-m-d H:i:s", strtotime($duration));
 
@@ -73,15 +74,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         pImage,
         pQuantity,
         pInitialCost,
-        bCountDown
+        bCountDown,
+        Category
         ) VALUES (
           '$pName',
           '$pDescription',
           '$target_file',
           '$pQuantity',
           '$pInitialCost',
-          '$timestamp'
+          '$timestamp',
+          '$ProductCategory'
           )";
+
 
         if (mysqli_query($conn, $sql)) {
           header('Location: index.php?msg=SUCCESS: Upload successful.&type=true');

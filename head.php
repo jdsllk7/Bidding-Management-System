@@ -10,7 +10,7 @@ include 'db/connect.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Bidding Management System</title>
+	<title>Online Auction Management System</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
@@ -51,12 +51,28 @@ include 'db/connect.php';
 
 					<!-- Search -->
 					<h2 class="header-search">
-						Bidding Management System
+						Online Auction Management System
 					</h2>
 					<!-- /Search -->
 				</div>
 				<div class="pull-right">
 					<ul class="header-btns">
+
+						<div class="form-group">
+							<label for="">Search By Category Here</label>
+
+							<select name="Product Category" onchange="location = this.value;">
+								<option value="">- Select Category -</option>
+								<option value="index.php?category=all">- View All -</option>
+								<option value="index.php?category=Bags and Shoes">Bags and Shoes</option>
+								<option value="index.php?category=Cars">Cars</option>
+								<option value="index.php?category=Electronic Appliances and Gadgets">Electronic Appliances and Gadgets</option>
+								<option value="index.php?category=Jewelry and Watches">Jewelry and Watches</option>
+							</select>
+							
+							<br><br>
+						</div>
+
 						<!-- Account -->
 						<li class="header-account dropdown default-dropdown">
 							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">

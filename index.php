@@ -9,14 +9,24 @@
 			<!-- section-title -->
 			<div class="col-md-12">
 				<div class="section-title">
-					<h2 class="title">Deals Of The Day</h2>
+					<?php
+					if (isset($_GET["category"])) {
+						$category = $_GET["category"];
+						if ($category == 'all') {
+							echo '<h2 class="title">Deals Of The Day</h2>';
+						} else {
+							echo '<h2 class="title">' . $category . '</h2>';
+						}
+					} else {
+						echo '<h2 class="title">Deals Of The Day</h2>';
+					}
+					?>
+
 					<div class="pull-right">
 						<div class="product-slick-dots-1 custom-dots"></div>
 					</div>
 				</div>
 			</div>
-			<!-- /section-title -->
-
 			<!-- banner -->
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<div class="banner banner-2">
@@ -37,7 +47,18 @@
 						<!-- Product Single -->
 						<?php
 
-						$data = mysqli_query($conn, "SELECT * FROM product");
+						$category = '';
+
+						if (isset($_GET["category"])) {
+							$category = $_GET["category"];
+							if ($category == 'all') {
+								$category = 'WHERE 1=1';
+							} else {
+								$category = 'WHERE Category like \'' . $category . '\'';
+							}
+						}
+
+						$data = mysqli_query($conn, "SELECT * FROM product $category");
 
 						if (mysqli_num_rows($data) > 0) {
 							while ($result = mysqli_fetch_assoc($data)) {
@@ -62,7 +83,7 @@
 									$bid = '<span>' . $result["pQuantity"] . ' in Stoke</span>';
 								}
 
-								echo '<div class="product product-single '.$hide.'">
+								echo '<div class="product product-single ' . $hide . '" style="height:500px;">
 									<div class="product-thumb">
 										<div class="product-label ">
 											<span>' . $bid . '</span>

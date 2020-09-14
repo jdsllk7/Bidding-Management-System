@@ -46,7 +46,7 @@ if (isset($_COOKIE["userId"]) || isset($_COOKIE["admin"])) {
 						</div>
 						<div class="caption">
 							<label for="shipping-2">Set You Price</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<p>Online Auction Management System Allows You To Bid on Your Terms Of Financial Comfort. You Can Set Your Own Price of A Product You Wish To Purchase Or Still Buy It At The Default Price.
 								<p>
 						</div>
 

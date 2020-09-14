@@ -99,10 +99,6 @@ if (!isset($_GET["productId"])) {
 				?>
 				<!-- /Product Details -->
 
-
-
-
-
 		</div>
 		<!-- /row -->
 	</div>
@@ -164,8 +160,10 @@ if (!isset($_GET["productId"])) {
 
 
 		// If the count down is over, write some text 
+		// <p id="demo"> </p>
 		if (distance < 0) {
 			clearInterval(x);
+			document.getElementById("demo").innerHTML = "Bid time is up.";
 		}
 	}, 1000);
 </script>

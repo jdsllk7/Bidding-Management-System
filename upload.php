@@ -27,6 +27,19 @@ if (!isset($_COOKIE["userId"]) && !isset($_COOKIE["admin"])) {
 							<label for="">Product Description</label>
 							<textarea class="form-control" name="pDescription" placeholder="Product Description" rows="3" cols="4" required></textarea>
 						</div>
+
+						<div class="form-group">
+							<label for="">Select Category</label>
+							<select name="ProductCategory" required>
+								<option value="">- Select -</option>
+								<option value="Bags and Shoes">Bags and Shoes</option>
+								<option value="Cars">Cars</option>
+								<option value="Electronic Appliances and Gadgets">Electronic Appliances and Gadgets</option>
+								<option value="Jewelry and Watches">Jewelry and Watches</option>
+							</select>
+							<br><br>
+						</div>
+
 						<div class="form-group">
 							<label for="">Image</label>
 							<input type="file" name="pImage" class="input" accept=".jpg,.png,.jpeg" />

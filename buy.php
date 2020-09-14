@@ -75,24 +75,22 @@ $bid["pBidCost"];
 							<input type="radio" name="payments" id="payments-1" checked>
 							<label for="payments-1">Direct Bank Transfer</label>
 							<div class="caption">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								<p><b> RECOMMENDED: </b> Direct Bank Transfer Allows Real-Time Deductions and Accountability With 100% Efficiency.
 									<p>
 							</div>
 						</div>
 						<div class="input-checkbox">
 							<input type="radio" name="payments" id="payments-2">
-							<label for="payments-2">Cheque Payment</label>
+							<label for="payments-2"></label>
 							<div class="caption">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									<p>
+								
 							</div>
 						</div>
 						<div class="input-checkbox">
 							<input type="radio" name="payments" id="payments-3">
-							<label for="payments-3">Paypal System</label>
+							<label for="payments-3"></label>
 							<div class="caption">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									<p>
+								
 							</div>
 						</div>
 					</div>

@@ -15,7 +15,8 @@
 						</div>
 						<!-- /footer logo -->
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<p>Did You Know That You Can Access Products On The Online Auction Management Site From Any Location In Zambia? Try Out Our Services Today By Simply Creating An Account With Us And <b><i>LET'S GET BIDDING</i></b>
+					</p>
 
 						<!-- footer social -->
 						<ul class="footer-social">
@@ -65,7 +66,7 @@
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="footer">
 						<h3 class="footer-header">Stay Connected</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+						<p>Staying Connected To Our Site Provides You A Number Of Advantages Which Include Seasonal Discounts, Free Shipment, And Multiple Purchases With Less Costs.</p>
 						<form>
 							<div class="form-group">
 								<input class="input" placeholder="Enter Email Address">
@@ -84,7 +85,7 @@
 					<!-- footer copyright -->
 					<div class="footer-copyright">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Online Auction Management System <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</div>
 					<!-- /footer copyright -->
