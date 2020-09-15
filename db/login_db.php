@@ -1,4 +1,5 @@
 <?php
+include 'connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -14,6 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = $_POST['password'];
 
         $data = mysqli_query($conn, "SELECT * FROM users WHERE email='$email' AND password='$password'");
+
+        // die("SELECT * FROM users WHERE email='$email' AND password='$password'");
 
         if ($email == 'admin@admin.com' && $password == 'admin') {
             setcookie('admin', 'admin', time() + (86400 * 30), "/");
