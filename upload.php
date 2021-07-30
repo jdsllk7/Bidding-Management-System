@@ -1,4 +1,6 @@
-<?php include 'head.php';
+<?php 
+include 'db/db_upload.php';
+include 'head.php';
 if (!isset($_COOKIE["userId"]) && !isset($_COOKIE["admin"])) {
 	header('Location:login.php');
 }
@@ -11,7 +13,7 @@ if (!isset($_COOKIE["userId"]) && !isset($_COOKIE["admin"])) {
 	<div class="container">
 		<!-- row -->
 		<div class="row">
-			<?php include 'db/db_upload.php'; ?>
+			
 			<form class="clearfix" enctype="multipart/form-data" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
 				<div class="col-md-6">
